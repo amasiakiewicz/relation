@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 class PostingConfiguration {
     
     @Bean
-    PostingFacade ruleFacade(final PostingRepository postingRepository) {
+    PostingFacade postingFacade(final PostingRepository postingRepository) {
         return new PostingFacade(postingRepository);
     }
     
